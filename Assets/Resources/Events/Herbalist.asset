@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dff1c6be3671a40bf64652cc00bd3b, type: 3}
+  m_Name: Herbalist
+  m_EditorClassIdentifier: 
+  Weight: 5
+  MinLuck: 3
+  MaxLuck: 18
+  MinEventsDelay: 48
+  RepeatsCount: 1
+  Title: Herbalist
+  MainSprite: {fileID: 21300000, guid: 32a9e89efc8c9ea42af4b8845f6dbe50, type: 3}
+  Desription: The herbalist is ready to join your ranks as a plague doctor for a
+    small fee.
+  Standart_Actions: []
+  Standart_ChangeOtherEventsWeight: []
+  Answers:
+  - CloseCardOnPress: 0
+    AnswerText: Buy
+    AnswerResultText: 
+    AnswerResultSprite: {fileID: 0}
+    Actions:
+    - IsAddToText: 1
+      RE_Action: 1
+      value: -80
+    - IsAddToText: 1
+      RE_Action: 5
+      value: 1
+    RequiredConditions:
+    - IsAddToText: 1
+      RE_Condition: 1
+      value: 80
+    ChangeOtherEventsWeightAndRepeats: []
+  - CloseCardOnPress: 1
+    AnswerText: No
+    AnswerResultText: 
+    AnswerResultSprite: {fileID: 0}
+    Actions: []
+    RequiredConditions: []
+    ChangeOtherEventsWeightAndRepeats:
+    - Now: 0
+      NextHour: 0
+      Event: {fileID: 11400000}
+      WeightDelta: 0
+      RepeatDelta: 1

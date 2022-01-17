@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b504661d7f798742a89cd73a25e35ba, type: 3}
+  m_Name: WC_test
+  m_EditorClassIdentifier: 
+  density: 1
+  size: 0.2
+  countMainStreets: 50
+  countLevelStreets: 1
+  perlinPixelZone: {x: 50, y: 30}
+  intensityOnPerlin: 0.619
+  stepOnPerlin: 2.4
+  distanceBetweenPoints: 0.64
+  maximalDistanceConnect: 0.7
+  offsetPoints: {x: -4, y: -4}
+  seed: 345

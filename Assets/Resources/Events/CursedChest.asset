@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dff1c6be3671a40bf64652cc00bd3b, type: 3}
+  m_Name: CursedChest
+  m_EditorClassIdentifier: 
+  Weight: 1
+  MinLuck: 3
+  MaxLuck: 10
+  MinEventsDelay: 0
+  RepeatsCount: 1
+  Title: Strange golden chest
+  MainSprite: {fileID: 21300000, guid: 455e40b05debfa74b931eb68031f6e57, type: 3}
+  Desription: You found strange chest full of glowing golden coins.
+  Standart_Actions: []
+  Standart_ChangeOtherEventsWeight: []
+  Answers:
+  - CloseCardOnPress: 0
+    AnswerText: Take it.
+    AnswerResultText: Something happens.
+    AnswerResultSprite: {fileID: 21300000, guid: 455e40b05debfa74b931eb68031f6e57, type: 3}
+    Actions:
+    - IsAddToText: 0
+      RE_Action: 3
+      value: 0.5
+    - IsAddToText: 1
+      RE_Action: 1
+      value: 150
+    RequiredConditions: []
+    ChangeOtherEventsWeightAndRepeats: []
+  - CloseCardOnPress: 0
+    AnswerText: Don't touch it.
+    AnswerResultText: Nothing happens.
+    AnswerResultSprite: {fileID: 0}
+    Actions: []
+    RequiredConditions: []
+    ChangeOtherEventsWeightAndRepeats: []

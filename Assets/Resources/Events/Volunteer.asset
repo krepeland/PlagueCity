@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dff1c6be3671a40bf64652cc00bd3b, type: 3}
+  m_Name: Volunteer
+  m_EditorClassIdentifier: 
+  Weight: 8
+  MinLuck: 3
+  MaxLuck: 18
+  MinEventsDelay: 24
+  RepeatsCount: 3
+  Title: Volunteer
+  MainSprite: {fileID: 0}
+  Desription: Citizen wants to join your ranks
+  Standart_Actions: []
+  Standart_ChangeOtherEventsWeight: []
+  Answers:
+  - CloseCardOnPress: 0
+    AnswerText: Buy guard
+    AnswerResultText: 
+    AnswerResultSprite: {fileID: 0}
+    Actions:
+    - IsAddToText: 1
+      RE_Action: 1
+      value: -25
+    - IsAddToText: 1
+      RE_Action: 2
+      value: -20
+    - IsAddToText: 1
+      RE_Action: 4
+      value: 1
+    RequiredConditions:
+    - IsAddToText: 1
+      RE_Condition: 1
+      value: 25
+    - IsAddToText: 1
+      RE_Condition: 2
+      value: 20
+    ChangeOtherEventsWeightAndRepeats: []
+  - CloseCardOnPress: 0
+    AnswerText: Buy doctor
+    AnswerResultText: 
+    AnswerResultSprite: {fileID: 0}
+    Actions:
+    - IsAddToText: 1
+      RE_Action: 1
+      value: -25
+    - IsAddToText: 1
+      RE_Action: 2
+      value: -20
+    - IsAddToText: 1
+      RE_Action: 5
+      value: 1
+    RequiredConditions:
+    - IsAddToText: 1
+      RE_Condition: 1
+      value: 25
+    - IsAddToText: 1
+      RE_Condition: 2
+      value: 20
+    ChangeOtherEventsWeightAndRepeats: []
+  - CloseCardOnPress: 1
+    AnswerText: No
+    AnswerResultText: 
+    AnswerResultSprite: {fileID: 0}
+    Actions: []
+    RequiredConditions: []
+    ChangeOtherEventsWeightAndRepeats:
+    - Now: 0
+      NextHour: 0
+      Event: {fileID: 11400000}
+      WeightDelta: 0
+      RepeatDelta: 1

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ef9bec0d117de46b595f90dfa81900, type: 3}
+  m_Name: Default_PlagueConfig
+  m_EditorClassIdentifier: 
+  StartRadius: 0.5
+  StartHour: 24
+  MaxImmunity: 30
+  MinImmunity: -50
+  StartImmunity: 20
+  InfectionPerHuman: 10
+  ImmunityDamageInfected: 3
+  ImmunityDamageSick: 12
+  InfectionDistance: 1
+  IncubationHoursMin: 6
+  IncubationHoursMax: 12
+  SickHoursMin: 48
+  SickHoursMax: 240
+  SkipLuck: 12
+  HourInfectionCoefficient:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.75
+  - 0.75
+  - 1
+  - 1
+  - 1
+  - 1.25
+  - 1.25
+  - 1.25
+  - 1.25
+  - 1.25
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0.75
+  - 0.75
+  - 0.75
+  - 0.25
+  - 0.25
+  - 0.25
+  PlagueStopChance_Strong: 100
+  PlagueStopChance_Medium: 98.5
+  PlagueStopChance_Weak: 85
+  PlagueStopChance_None: 60
